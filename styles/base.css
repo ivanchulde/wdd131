@@ -1,0 +1,135 @@
+:root {
+  --color-primary: #0D1B2A;
+  --color-secondary: #778DA9;
+  --color-accent: #415A77;
+  --color-background: #E0E1DD;
+  --color-white: #FFFFFF;
+  
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--color-accent);
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+nav a:hover {
+	text-decoration:underline;
+    color: var(--color-secondary);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--color-white);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+section h1 {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 30px;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+section h2 {
+    text-align: center;
+    margin: 0px;
+}
+
+section p {
+    padding: 20px;
+    text-align: justify;
+    margin: 0px 0px 0px 0px;
+
+}
+
+
+.about_me{
+    display: grid;
+    box-sizing: border-box;
+}
+
+.profile, .city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img.profile-img {
+    width: 100px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 20px;
+}
+
+img.ambato-img {
+    width: 40%;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    float: left;
+    margin: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
