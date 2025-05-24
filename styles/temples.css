@@ -96,7 +96,7 @@ img:hover{
 
 /* small view navigation */
 #menu {
-	font-size: 1.5rem;
+	font-size: 0;
 	border: 0;
 	background: none;
 	color: #000;
