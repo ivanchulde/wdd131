@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pailon</title>
+    <meta name="author" content="Ivan Chulde"/>
+    <meta name="description" content="Discover Pailon del Diablo, a breathtaking waterfall in Ecuador known for its stunning scenery, adventure trails, and natural beauty." />
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Pailon del Diablo</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+            <source srcset="images/cascada-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/cascada-medium.webp" media="(min-width: 500px)">
+            <img src="images/cascada-small-vertical.webp" alt="Pailon del Diablo waterfall" width="375px" height="500px" >
+            </picture>
+             <section class="data">
+                <h2>Data</h2>
+                <ul class="info-list">
+                    <li><span class="label">Location</span><span class="separator">:</span><span class="value">Baños, Tungurahua, Ecuador</span></li>
+                    <li><span class="label">Waterfall Height</span><span class="separator">:</span><span class="value">80 meters</span></li>
+                    <li><span class="label">Type</span><span class="separator">:</span><span class="value">Waterfall</span></li>
+                    <li><span class="label">River</span><span class="separator">:</span><span class="value">Río Verde</span></li>
+                    <li><span class="label">Access</span><span class="separator">:</span><span class="value">Trails and hanging bridges</span></li>
+                </ul>
+
+            </section>
+            <section class="weather">
+                
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon" width="48" height="48">
+                <ul>
+                    <li><span class="label">Temperature °F</span><span class="separator">:</span><span class="temperature">60</span></li>
+                    <li><span class="label">Wind Speed</span><span class="separator">:</span><span class="windspeed">85%</span></li>
+                    <li><span class="label">Wind Chill</span><span class="separator">:</span><span class="windchill">19°C</span></li>
+                </ul>
+
+            </section>
+
+        </div>
+
+       
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> ANIV INGENIERÍA | All rights reserved.</p>
+        <p>Last modified: <span id="lastModified"></span> | Ambato, Tungurahua, Ecuador.</p>
+    </footer>
+</body>
+</html>

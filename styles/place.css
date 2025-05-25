@@ -1,0 +1,151 @@
+:root {
+--color-primary: #172421;
+--color-secondary: #A7B8B0;
+--color-accent: #757868;
+--color-background: #F2F7F8;
+--color-white: #E2ECEC;
+  
+}
+
+header, footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 20px;
+    text-align: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+    
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.hero img {
+  width: 100%;
+  ;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 1rem auto;
+  margin: 1rem auto;
+  display: block; /* override mobile grid */
+}
+/*Code for sections*/
+
+section {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+
+.label {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+}
+
+.separator {
+    flex: 0;
+    text-align: center;
+}
+
+.value , .temperature, .windspeed , .windchill {
+    flex: 1;
+    text-align: left;
+}
+
+/* Code for h2 */
+ h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+ }
+
+.weather-header {
+    
+    
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.weather-icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+/*desktop */
+@media (min-width: 768px) {
+   .hero {
+    position: relative;
+  }
+  .weather-icon {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: "🌥️"; /* Or use a Unicode emoji or SVG background */
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .data, .weather {
+    position: absolute;
+    background-color: rgba(226, 236, 236, 0.9); /* optional semi-transparent */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 300px;
+  }
+
+  
+  .data {
+    top: 5%;
+    left: 5%;
+  }
+
+  .weather {
+    bottom: 5%;
+    right: 5%;
+  }
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+}
