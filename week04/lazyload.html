@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazzy Load</title>
+    <meta name="author" content="Ivan Chulde"/>
+    <meta name="description" content="A demonstration of lazy loading images to improve page performance." />
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Images Demo</h1>
+    </header>
+    <main>
+        <img src="images/image1.webp" loading="lazy" alt="Description of image 1">
+        <img src="images/image2.webp" loading="lazy" alt="Description of image 2">
+        <img src="images/image3.webp" loading="lazy" alt="Description of image 3">
+        <img src="images/image4.webp" loading="lazy" alt="Description of image 4">
+        <img src="images/image5.webp" loading="lazy" alt="Description of image 5">
+        <img src="images/image6.webp" loading="lazy" alt="Description of image 6">
+        <img src="images/image7.webp" loading="lazy" alt="Description of image 7">
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Ivan Chulde  | Ambato-Ecuador.</p>
+        <p>Last Modified in: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
