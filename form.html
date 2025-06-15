@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Product Review</title>
     <meta name="author" content="Ivan Chulde"/>
     <meta name="description" content="A simple form page for a web development assignment by Ivan Chulde." />
     <link rel="stylesheet" href="styles/form.css">
@@ -19,81 +19,79 @@
         </h1>
     </header>
 
-    <body>
-        <main>
-            <form method="get" action="review.html" class="wf1">
-                <!-- Product Name -->
-                <fieldset>
-                    <label>Product Name*
-                    <select name="productName" id="productName" required>
-                        <option value="" disabled selected>Select a Product &#9662;</option>
-                    </select>    
-                    </label>
-                </fieldset>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <!-- Product Name -->
+            <fieldset>
+                <label>Product Name*
+                <select name="productName" id="productName" required>
+                    <option value="" disabled selected>Select a Product &#9662;</option>
+                </select>    
+                </label>
+            </fieldset>
 
-                <!-- Overall Rating -->
-                <fieldset>
-                <label for="rating">Overall Rating
-                <div class="rating-group" id="rating">
-                    <div class="rating-option">
-                    <div>★</div>
-                    <input type="radio" name="rating" value="1" />
-                    </div>
-                    <div class="rating-option">
-                    <div>★★</div>
-                    <input type="radio" name="rating" value="2" />
-                    </div>
-                    <div class="rating-option">
-                    <div>★★★</div>
-                    <input type="radio" name="rating" value="3" />
-                    </div>
-                    <div class="rating-option">
-                    <div>★★★★</div>
-                    <input type="radio" name="rating" value="4" />
-                    </div>
-                    <div class="rating-option">
-                    <div>★★★★★</div>
-                    <input type="radio" name="rating" value="5" />
-                    </div>
+            <!-- Overall Rating -->
+            <fieldset>
+            <label for="rating">Overall Rating </label>
+            <div class="rating-group" id="rating">
+                <div class="rating-option">
+                <div>★</div>
+                <input type="radio" name="rating" value="1" />
                 </div>
-                </label>
-                </fieldset>
-
-                <!-- Date of Installation -->
-                <fieldset>
-                    <label>Date of Installation<input type="date" name="installationDate" required></label>
-                </fieldset>
-
-                <!-- Useful Features -->
-                <fieldset>
-                    <label>Which features did you find useful in the product?
-                    <div class="features">
-                    <label><input type="checkbox" name="durability" value="yes">Durability</label>
-                    <label><input type="checkbox" name="use" value="yes">Ease of Use</label>
-                    <label><input type="checkbox" name="performance" value="yes">Performance</label>
-                    <label><input type="checkbox" name="design" value="yes">Design</label>
-                    </div>
-                    </label>
-                </fieldset>
-
-                <!-- Written Review -->
-                <fieldset>
-                    <label> Write your Review Here (Optional)
-                    <textarea id="written-review" name="written-review" rows="4" cols="40"></textarea>
-                </label>
-                </fieldset>
-
-                <!-- User Name -->
-                <fieldset>
-                    <label>Your Name (Optional)<input type="text" name="yname"></label>
-                </fieldset>
-
-            <input type="submit" value="Post Review">
-            </form>
-
+                <div class="rating-option">
+                <div>★★</div>
+                <input type="radio" name="rating" value="2" />
+                </div>
+                <div class="rating-option">
+                <div>★★★</div>
+                <input type="radio" name="rating" value="3" />
+                </div>
+                <div class="rating-option">
+                <div>★★★★</div>
+                <input type="radio" name="rating" value="4" />
+                </div>
+                <div class="rating-option">
+                <div>★★★★★</div>
+                <input type="radio" name="rating" value="5" />
+                </div>
+            </div>
             
-        </main>
-    </body>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <fieldset>
+                <label>Date of Installation<input type="date" name="installationDate" required></label>
+            </fieldset>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <label>Which features did you find useful in the product?</label>
+                <div class="features">
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="use" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" value="yes">Design</label>
+                </div>
+                
+            </fieldset>
+
+            <!-- Written Review -->
+            <fieldset>
+                <label> Write your Review Here (Optional)</label>
+                <textarea id="written-review" name="written-review" rows="4" cols="40"></textarea>
+            
+            </fieldset>
+
+            <!-- User Name -->
+            <fieldset>
+                <label>Your Name (Optional)<input type="text" name="yname"></label>
+            </fieldset>
+
+        <input type="submit" value="Post Review">
+        </form>
+
+        
+    </main>
 
    <footer>
         <p>&copy; <span id="current-year"></span> Ivan Chulde  | Ambato-Ecuador.</p>
