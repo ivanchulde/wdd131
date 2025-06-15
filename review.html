@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Ivan Chulde"/>
+    <meta name="description" content="A simple form page for a web development assignment by Ivan Chulde." />
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Product Review
+        </h1>
+    </header>
+
+    <main>
+        <section class="thank-you">
+            <h2>Thank You!</h2>
+            <p>Your review has been submitted successfully.</p>
+            <p>We appreciate your feedback and will use it to improve our products and services.</p>
+            <p>You have submitted <span id="reviewCount">0</span> reviews so far.</p>
+            <button class="button" onclick="window.location.href='form.html'">Submit Another Review</button>
+        </section>
+    </main>
+
+   <footer>
+        <p>&copy; <span id="current-year"></span> Ivan Chulde  | Ambato-Ecuador.</p>
+        <p>Last Modified in: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+:root {
+  --color-primary: #0D1B2A; /* for header and footer */
+  --color-secondary: #778DA9; /* for secondary elements */
+  --color-accent: #415A77; /* for navigation */
+  --color-background: #E0E1DD;  /* for body background */
+  --color-white: #FFFFFF;   /* for text in header and footer */
+  
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    min-height: 60vh; /* Ensures main content takes up at least 60% of the viewport height */
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+/*-------- stars ---------- */
+
+.rating-group {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.rating-option input[type="radio"] {
+    margin-top: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+    }
+
+/*-----------FORM STYLING --------------*/
+.wf1 fieldset {
+    
+    border: 0px solid #5a5858;
+    border-radius: 6px;
+    padding: .25rem 2%;
+}
+
+.wf1 legend {
+    color: blue;
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    color: black;
+    font-size: .9rem;
+}
+
+.wf1 div {
+    
+    color:black;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 textarea{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+    
+}
+
+.features label {
+    font-weight: normal;
+    margin: 0.5%;
+}
+
+.wf1 input[type="submit"],
+button{
+    border: none;
+    background-color: var(--color-primary);
+    color:#fff;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required {
+    border-right: solid 8px red
+}
+
+.wf1 input:required:valid {
+    border-right: solid 8px green
+}
+
+
