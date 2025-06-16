@@ -14,11 +14,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
   
 }
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('poppins.woff2') format('woff2');
-  font-display: swap; /* Use fallback font immediately */
-}
+
 
 body {
     font-family: "Roboto", sans-serif;
